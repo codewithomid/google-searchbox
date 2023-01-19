@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(60, 133, 202);
+
+    height: 100vh;
+}
+
+.searchbox {
+    position: relative;
+
+    width: 480px;
+    margin: 0 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.search_icon {
+    width: 15px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.image_icon {
+    width: 20px;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: black;
+    font-size: .6em;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    position: absolute;
+    top: 32px;
+    right: -36px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
